@@ -30,7 +30,7 @@ class Login extends Component {
     const { history } = this.props
     console.log(history)
     axios
-      .post("http://localhost:8080/api/login", formData)
+      .post("/api/login", formData)
 
       .then(json => {
 
