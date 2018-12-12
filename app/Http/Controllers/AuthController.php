@@ -40,7 +40,7 @@ class AuthController extends Controller
 
       return User::authenticate($request, $this->client);     
     }
-    else 'failed to register user';
+    return 'failed to register user';
   }
 
   public function logout() {
